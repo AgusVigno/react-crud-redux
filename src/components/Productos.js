@@ -13,7 +13,7 @@ const Productos = () => {
         const cargarProductos = () => dispatch(obtenerProductosAction());
         cargarProductos();
 
-    }, []);
+    }, [dispatch]);
 
     //obtener productos del state
     const productos = useSelector( state => state.productos.productos);
